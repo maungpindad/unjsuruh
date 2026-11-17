@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="auth-split" style="background:#f0fdfa;">
+    <div class="auth-split__panel auth-split__panel--brand" style="background:transparent;">
+      <svg class="auth-logo" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="10" width="120" height="60" rx="14" fill="#0d9488"/>
+        <text x="60" y="48" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="700" fill="#ffffff">UNJ Suruh</text>
+      </svg>
+      <div>
+        <p class="auth-split__title">Selamat Datang Kembali!</p>
+        <p class="auth-split__subtitle">Masuk untuk memantau tugas berjalan, memberikan bantuan, atau mencairkan hasil pekerjaanmu.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:16px; width:100%;">
+        <div class="feature-row">
+          <div class="feature-row__icon">🛡️</div>
+          <div>
+            <p class="feature-row__title">Eksklusif Civitas UNJ</p>
+            <p class="feature-row__desc">Verifikasi akun aman menggunakan KTM dan email resmi kampus.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__icon">💼</div>
+          <div>
+            <p class="feature-row__title">Pembayaran Transparan</p>
+            <p class="feature-row__desc">Pantau status pencairan dana dan riwayat transaksi dengan mudah.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__icon">💬</div>
+          <div>
+            <p class="feature-row__title">Akses Chat Langsung</p>
+            <p class="feature-row__desc">Lanjutkan obrolan dengan client atau worker secara real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-split__panel" style="justify-content:center;">
+      <form class="auth-form-card" onsubmit="return false;">
+        <div>
+          <p class="auth-split__title" style="font-size:24px;">Masuk ke Akun</p>
+          <p style="font-size:14px; color:#6b7280;">Lanjutkan urusan kampusmu dengan mudah.</p>
+        </div>
+
+        <div class="form-field">
+          <label for="identifier">Email UNJ atau NIM</label>
+          <input id="identifier" type="text" placeholder="nama@mhs.unj.ac.id atau 1512XXXXXX" required />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Kata Sandi</label>
+          <input id="password" type="password" placeholder="••••••••" required />
+        </div>
+
+        <div class="auth-options">
+          <label style="display:flex; gap:8px; align-items:center; color:#6b7280;">
+            <input type="checkbox" style="accent-color:#0d9488;" />
+            Ingat Saya
+          </label>
+          <a href="#">Lupa kata sandi?</a>
+        </div>
+
+        <button type="submit" class="btn-block">Masuk ke Akun</button>
+
+        <p class="auth-footer-link">Belum punya akun? <a href="register.html">Daftar Sekarang</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

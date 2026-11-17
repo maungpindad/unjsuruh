@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buat Postingan Tugas — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body style="background:#f8fafc;">
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <form class="form-card" onsubmit="return false;">
+      <div>
+        <a href="index.html" class="back-link">← Kembali ke Homepage</a>
+        <p class="page-title" style="margin:12px 0 4px; font-size:28px;">Buat Postingan Tugas Baru</p>
+        <p style="color:#6b7280; font-size:15px;">Isi rincian tugas atau bantuan yang kamu butuhkan agar mahasiswa lain bisa membantu.</p>
+      </div>
+
+      <div class="form-field">
+        <label>Judul Tugas / Bantuan</label>
+        <input class="form-input" type="text" placeholder="Contoh: Bantu print 20 lembar & antar ke Gedung M Kampus A" />
+      </div>
+
+      <div class="form-field">
+        <label>Pilih Kategori</label>
+        <div class="option-pills">
+          <span class="option-pill">Errand &amp; Jastip</span>
+          <span class="option-pill active">Akademik &amp; Tutoring</span>
+          <span class="option-pill">Desain &amp; Media</span>
+          <span class="option-pill">Lainnya</span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Lokasi Pengerjaan / Pengantaran</label>
+        <label class="radio-option">
+          <input type="radio" name="lokasi" />
+          📍 Kampus A (Rawamangun)
+        </label>
+        <label class="radio-option active">
+          <input type="radio" name="lokasi" checked />
+          📍 Kampus B (Velodrome)
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="lokasi" />
+          📍 Kampus C
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="lokasi" />
+          💻 Online / Remote
+        </label>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Nominal Fee (Rp)</label>
+          <input class="form-input" type="number" placeholder="Contoh: 25.000" />
+        </div>
+        <div class="form-field">
+          <label>Tenggat Waktu (Deadline)</label>
+          <input class="form-input" type="datetime-local" />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Deskripsi Detail &amp; Catatan Khusus</label>
+        <textarea class="form-input" placeholder="Jelaskan detail instruksi, kriteria hasil, atau spesifikasi tugas..."></textarea>
+        <label class="upload-box" for="fileUpload">📎 Unggah foto/file pendukung (opsional)</label>
+        <input id="fileUpload" type="file" style="display:none;" />
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-cancel">Batal</button>
+        <a href="index.html" class="btn btn-primary" data-loading-title="Mempublikasikan tugas..." data-loading-desc="Tugas kamu sedang disiapkan untuk ditampilkan.">Publikasikan Tugas</a>
+      </div>
+    </form>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembayaran — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div style="padding:20px 30px 0;">
+      <p class="breadcrumb">Tugas Saya / Print &amp; Antar / Pembayaran</p>
+      <p class="page-title" style="margin-bottom:0;">Pembayaran</p>
+    </div>
+
+    <div style="padding:16px 30px 0;">
+      <div class="stepper">
+        <div class="step-item done"><span class="step-item__circle">✓</span> Detail Tugas</div>
+        <div class="step-line"></div>
+        <div class="step-item active"><span class="step-item__circle">2</span> Pembayaran DP</div>
+        <div class="step-line"></div>
+        <div class="step-item"><span class="step-item__circle">3</span> Tugas Dikerjakan</div>
+        <div class="step-line"></div>
+        <div class="step-item"><span class="step-item__circle">4</span> Selesai &amp; Rating</div>
+      </div>
+    </div>
+
+    <div class="pay-layout">
+      <div class="pay-main">
+        <p class="detail-section-title" style="margin-bottom:4px;">Pilih Metode Pembayaran</p>
+        <p class="detail-section-text" style="margin-bottom:20px;">Pembayaran diproses aman dan ditahan di escrow sampai tugas selesai.</p>
+
+        <div class="pay-methods">
+          <div class="pay-method-tab active" data-pay-tab="qris">
+            <span class="pay-method-tab__flag">Tercepat</span>
+            <p class="pay-method-tab__title">QRIS</p>
+            <p class="pay-method-tab__desc">Scan dengan semua e-wallet &amp; m-banking</p>
+          </div>
+          <div class="pay-method-tab" data-pay-tab="ewallet">
+            <p class="pay-method-tab__title">E-Wallet</p>
+            <p class="pay-method-tab__desc">Bayar langsung dari aplikasi</p>
+          </div>
+          <div class="pay-method-tab" data-pay-tab="bank">
+            <p class="pay-method-tab__title">Transfer Bank</p>
+            <p class="pay-method-tab__desc">Virtual account, otomatis terverifikasi</p>
+          </div>
+        </div>
+
+        <!-- PANEL QRIS -->
+        <div class="pay-panel active" id="panel-qris">
+          <div class="qr-box">▦</div>
+          <p style="font-size:12px; color:#94a3b8;">QR contoh · bukan QR sungguhan</p>
+          <p class="pay-timer">Bayar dalam 14:52</p>
+          <div>
+            <p style="color:#475569; font-size:14px;">Total pembayaran</p>
+            <p class="pay-total">Rp 13.500</p>
+          </div>
+          <ol class="pay-steps">
+            <li><span class="num">1</span> Buka aplikasi e-wallet atau m-banking yang mendukung QRIS.</li>
+            <li><span class="num">2</span> Pilih Scan / Bayar, lalu arahkan kamera ke kode QR ini.</li>
+            <li><span class="num">3</span> Cek nominal, lalu konfirmasi. Status otomatis terbarui.</li>
+          </ol>
+          <button class="btn btn-outline">Unduh Kode QR</button>
+        </div>
+
+        <!-- PANEL E-WALLET -->
+        <div class="pay-panel" id="panel-ewallet">
+          <p style="align-self:flex-start; font-weight:600; color:#0f172a;">Pilih e-wallet</p>
+          <div class="ewallet-list">
+            <span class="bank-chip active">GoPay</span>
+            <span class="bank-chip">OVO</span>
+            <span class="bank-chip">DANA</span>
+            <span class="bank-chip">ShopeePay</span>
+          </div>
+          <div class="form-field" style="max-width:420px;">
+            <label>Nomor HP terdaftar di GoPay</label>
+            <input class="form-input" type="tel" placeholder="🇮🇩 +62 812-3456-7890" />
+            <p style="font-size:12px; color:#94a3b8;">Permintaan bayar akan dikirim ke aplikasi GoPay di nomor ini.</p>
+          </div>
+          <p style="font-size:13px; color:#64748b;">Setelah menekan Bayar, buka notifikasi di aplikasimu dan konfirmasi dengan PIN dalam 15 menit.</p>
+          <ol class="pay-steps">
+            <li><span class="num">1</span> Masukkan nomor HP yang terhubung dengan akun e-wallet.</li>
+            <li><span class="num">2</span> Tekan Bayar Rp 13.500 di ringkasan pesanan.</li>
+            <li><span class="num">3</span> Buka aplikasi, cek nominal, lalu konfirmasi dengan PIN.</li>
+          </ol>
+        </div>
+
+        <!-- PANEL BANK -->
+        <div class="pay-panel" id="panel-bank">
+          <p style="align-self:flex-start; font-weight:600; color:#0f172a;">Pilih bank</p>
+          <div class="bank-list">
+            <span class="bank-chip active">BCA</span>
+            <span class="bank-chip">Mandiri</span>
+            <span class="bank-chip">BNI</span>
+            <span class="bank-chip">BRI</span>
+          </div>
+          <div class="va-box">
+            <div class="va-row"><span>Nomor Virtual Account BCA</span></div>
+            <div class="va-row"><b>8277 0812 3456 7890</b><span class="copy">Salin</span></div>
+            <div class="va-row"><span>Nama penerima</span><b style="font-size:14px;">UNJ Suruh (Escrow)</b></div>
+            <div class="va-row"><span>Jumlah transfer (harus sesuai)</span></div>
+            <div class="va-row"><b>Rp 13.500</b><span class="copy">Salin</span></div>
+          </div>
+          <p class="pay-timer">Bayar dalam 23:59:42</p>
+          <p style="font-size:12px; color:#94a3b8;">Nomor VA contoh · bukan nomor sungguhan</p>
+          <ol class="pay-steps">
+            <li><span class="num">1</span> Buka aplikasi mobile banking, pilih menu Transfer lalu Virtual Account.</li>
+            <li><span class="num">2</span> Masukkan nomor VA di atas, lalu cek nama penerima UNJ Suruh.</li>
+            <li><span class="num">3</span> Pastikan nominal Rp 13.500, lalu masukkan PIN untuk konfirmasi.</li>
+            <li><span class="num">4</span> Status pembayaran otomatis terbarui, biasanya dalam beberapa menit.</li>
+          </ol>
+          <button class="btn btn-outline" style="width:100%; max-width:420px;">Saya Sudah Transfer</button>
+          <p style="font-size:12px; color:#94a3b8;">Status otomatis terbarui setelah dana kami terima</p>
+        </div>
+      </div>
+
+      <div class="pay-sidebar">
+        <div class="card" style="display:flex; flex-direction:column; gap:12px;">
+          <p class="detail-section-title">Ringkasan Pesanan</p>
+          <span class="tag-teal" style="width:fit-content;">Print &amp; Antar</span>
+          <p style="font-weight:600; color:#0f172a;">Print &amp; Antar Dokumen ke Gedung M</p>
+          <p style="font-size:14px; color:#64748b;">📍 Kampus A Rawamangun<br />🕒 Tenggat hari ini, 12.30</p>
+          <div class="summary-row"><span>Imbalan volunteer</span><span>Rp 25.000</span></div>
+          <div class="summary-row"><span>DP 50% dibayar sekarang</span><span>Rp 12.500</span></div>
+          <div class="summary-row"><span>Biaya layanan</span><span>Rp 1.000</span></div>
+          <div class="summary-row"><span>Kode promo</span><span style="color:var(--color-primary); font-weight:600;">Pakai</span></div>
+          <div class="summary-row total"><span>Total bayar</span><span>Rp 13.500</span></div>
+          <a href="progress-client.html" class="btn btn-primary" style="width:100%;" data-loading-title="Memproses pembayaran..." data-loading-desc="Mengamankan dana di escrow. Jangan tutup halaman ini.">Bayar Rp 13.500</a>
+          <p style="text-align:center; font-size:12px; color:#94a3b8;">🔒 Transaksi terenkripsi &amp; dilindungi escrow</p>
+        </div>
+
+        <div class="card escrow-note" style="flex-direction:column;">
+          <p style="font-weight:700; color:#0f172a;">🛡️ Dana kamu aman</p>
+          <p>DP ditahan sistem, baru diteruskan ke volunteer saat tugas selesai. Sisa Rp 12.500 dibayar setelah hasil kamu terima.</p>
+          <div class="escrow-steps">
+            <span>DP 50%</span><span>Dikerjakan</span><span>Dana cair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('[data-pay-tab]').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('[data-pay-tab]').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.pay-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelector('#panel-' + tab.dataset.payTab).classList.add('active');
+      });
+    });
+    document.querySelectorAll('.bank-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        chip.parentElement.querySelectorAll('.bank-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

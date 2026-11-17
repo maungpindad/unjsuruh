@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Tugas — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div style="padding:20px 30px 0;">
+      <p class="breadcrumb"><a href="cari-tugas.html">Eksplorasi Tugas</a> / <a href="cari-tugas.html">Print &amp; Antar</a> / Detail</p>
+      <p class="page-title" style="margin-bottom:0;">Detail Tugas</p>
+    </div>
+
+    <div class="detail-layout">
+      <div class="detail-main">
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <span class="tag-teal">Print &amp; Antar</span>
+          <p class="detail-title">Print &amp; Antar Dokumen ke Gedung M</p>
+          <div class="detail-meta-row">
+            <span>📍 Kampus A Rawamangun</span>
+            <span>🕒 Tenggat hari ini, 12.30</span>
+          </div>
+          <div>
+            <p class="detail-section-title">Deskripsi</p>
+            <p class="detail-section-text">Butuh print dokumen tugas sebelum kelas dimulai, tapi sedang tidak bisa meninggalkan ruang kuliah. Mohon diprint lalu diantar ke gedung M.</p>
+          </div>
+          <div>
+            <p class="detail-section-title">Spesifikasi</p>
+            <ul class="detail-section-text" style="padding-left:20px;">
+              <li>Kertas A4, hitam putih, bolak-balik</li>
+              <li>20 halaman, jilid lakban</li>
+              <li>Antar ke gedung M, tunggu didepan gedung</li>
+            </ul>
+          </div>
+          <div>
+            <p class="detail-section-title" style="margin-bottom:8px;">Lampiran berkas</p>
+            <div class="file-card">
+              <div class="file-card__icon">📄</div>
+              <div style="flex:1;">
+                <p class="file-card__name">tugas-desweb.pdf</p>
+                <p class="file-card__size">2,5MB</p>
+              </div>
+              <a href="#" style="color:var(--color-primary); font-weight:700; font-size:14px;">Unduh</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="accordion-card highlight" href="pembayaran.html">
+          <div style="flex:1;">
+            <div style="display:flex; gap:12px; align-items:center;">
+              <span>🛡️</span>
+              <span class="accordion-card__title">Status Pembayaran &amp; Escrow</span>
+            </div>
+            <span class="badge-amber">DP 50% Ditahan</span>
+            <p class="detail-section-text" style="margin:0;">Klik untuk melihat rincian alur transaksi &amp; bukti pembayaran.</p>
+          </div>
+          <span>⌄</span>
+        </a>
+        <a class="accordion-card" href="progress-volunteer.html">
+          <div style="flex:1;">
+            <div style="display:flex; gap:12px; align-items:center;">
+              <span>🕒</span>
+              <span class="accordion-card__title">Progress Pengerjaan Tugas</span>
+            </div>
+            <span class="badge-teal">Sedang Dikerjakan</span>
+            <p class="detail-section-text" style="margin:0;">Klik untuk memantau status penyelesaian dan pembaruan dari volunteer.</p>
+          </div>
+          <span>⌄</span>
+        </a>
+      </div>
+
+      <div class="detail-sidebar">
+        <div class="card price-card" style="display:flex; flex-direction:column; gap:16px;">
+          <span style="color:#475569;">Imbalan</span>
+          <span class="price">Rp 25.000</span>
+          <p class="detail-section-text">DP 50% (Rp 12.500) ditahan escrow saat tugas diambil.</p>
+          <p style="font-size:14px; color:#475569;">Rekomendasi tarif minimum kategori ini: Rp 16.500</p>
+          <a href="pembayaran.html" class="btn btn-primary" style="width:100%;" data-loading-title="Mengambil tugas..." data-loading-desc="Menyiapkan halaman pembayaran DP.">Ambil Tugas</a>
+          <button class="btn btn-outline" style="width:100%;" type="button" data-open-chat>💬 Chat dengan Client</button>
+          <a href="#" style="text-align:center; color:#ef4444; font-weight:700; font-size:14px;">Laporkan tugas ini</a>
+        </div>
+
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <span style="color:#475569;">Diposting oleh</span>
+          <div style="display:flex; gap:16px; align-items:center;">
+            <span class="avatar-circle" style="width:56px;height:56px;font-size:20px; background:var(--color-primary); color:#fff;">AF</span>
+            <div>
+              <p style="font-weight:700; color:#475569;">Ahmad Fadhlan</p>
+              <p style="font-size:14px; color:#475569;">⭐ 4.8 rating</p>
+            </div>
+          </div>
+          <a href="profil.html" style="text-align:center; color:var(--color-primary); font-weight:700; font-size:14px;">Lihat profil</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
