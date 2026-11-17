@@ -1,0 +1,167 @@
+<nav class="navbar">
+  <div class="navbar__left">
+    <a href="index.html" class="navbar__logo">
+      <!-- PLACEHOLDER LOGO — ganti dengan logo asli hasil export dari Figma -->
+      <svg width="82" height="55" viewBox="0 0 82 55" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="82" height="55" rx="10" fill="#0d9488"/>
+        <text x="41" y="34" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="16" font-weight="700" fill="#ffffff">US</text>
+      </svg>
+    </a>
+    <ul class="navbar__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cari-tugas.html">Cari Tugas</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar__search">
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+      <line x1="14" y1="14" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <input type="text" placeholder="Cari tugas atau jasa..." />
+  </div>
+
+  <div class="navbar__right">
+    <button class="btn-post-tugas" type="button">Post Tugas</button>
+
+    <button class="navbar__bell" type="button" aria-label="Notifikasi" id="notifToggle">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3a5 5 0 00-5 5v3.2c0 .5-.2 1-.5 1.4L5 14.5c-.6.7-.1 1.8.8 1.8h12.4c.9 0 1.4-1.1.8-1.8l-1.5-2c-.3-.4-.5-.9-.5-1.4V8a5 5 0 00-5-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M10 18.5a2 2 0 004 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="navbar__bell-badge">3</span>
+    </button>
+
+    <div class="navbar__auth" id="profileMenuToggle">
+      <!-- PLACEHOLDER AVATAR — ganti dengan foto profil asli -->
+      <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="29" cy="29" r="29" fill="#0d9488"/>
+        <text x="29" y="36" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="700" fill="#ffffff">RA</text>
+      </svg>
+      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- DROPDOWN NOTIFIKASI -->
+    <div class="dropdown-panel" id="notifPanel">
+      <div class="notif-header"><strong>Notifikasi</strong><span>Tandai dibaca</span></div>
+      <div class="notif-item unread">
+        <div class="notif-icon">💬</div>
+        <div>
+          <p class="notif-text">Ahmad F. mengirim pesan: 'Kertasnya mau diprint warna?'</p>
+          <p class="notif-time">5 menit lalu</p>
+        </div>
+      </div>
+      <div class="notif-item unread">
+        <div class="notif-icon">💰</div>
+        <div>
+          <p class="notif-text">Status Escrow: DP 50% berhasil diamankan oleh sistem.</p>
+          <p class="notif-time">1 jam lalu</p>
+        </div>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon">✅</div>
+        <div>
+          <p class="notif-text">Tugas 'Print & Antar' berhasil dipublikasikan.</p>
+          <p class="notif-time">3 jam lalu</p>
+        </div>
+      </div>
+      <div class="notif-footer">Lihat Semua Notifikasi</div>
+    </div>
+
+    <!-- DROPDOWN PROFIL -->
+    <div class="dropdown-panel" id="profilePanel">
+      <div class="profile-dropdown__header">
+        <span class="avatar-circle">RA</span>
+        <div>
+          <p class="profile-dropdown__name">Rafif Wiryawan</p>
+          <p class="profile-dropdown__id">1512XXXXXX</p>
+          <span class="profile-dropdown__verified">✓ Mahasiswa UNJ Verified</span>
+        </div>
+      </div>
+      <div class="profile-dropdown__wallet">
+        <p class="profile-dropdown__wallet-label">Saldo UNJ Suruh</p>
+        <div class="profile-dropdown__wallet-row">
+          <span class="profile-dropdown__wallet-amount">Rp 125.000</span>
+          <span class="profile-dropdown__wallet-cta">Tarik Dana</span>
+        </div>
+      </div>
+      <div class="profile-dropdown__menu">
+        <a href="profil.html">👤 Profil Saya</a>
+        <a href="profil.html">📄 Tugas Saya (Dashboard) <span class="badge">2</span></a>
+        <a href="profil.html">⭐ Pencapaian &amp; Rating</a>
+        <a href="#">⚙️ Pengaturan Akun</a>
+      </div>
+      <div class="profile-dropdown__logout" id="logoutTrigger">🚪 Keluar (Log Out)</div>
+    </div>
+  </div>
+</nav>
+
+<!-- MODAL KONFIRMASI LOGOUT -->
+<div class="modal-overlay" id="logoutModal">
+  <div class="modal-box">
+    <div class="modal-box__icon">🚪</div>
+    <p class="modal-box__title">Yakin ingin keluar?</p>
+    <p class="modal-box__desc">Kamu perlu masuk lagi dengan akun Microsoft UNJ untuk mengakses tugas, chat, dan saldo.</p>
+    <div class="modal-box__account">
+      <span class="avatar-circle" style="width:42px;height:42px;">RA</span>
+      <div>
+        <b style="font-size:14px;">Rafif Wiryawan</b>
+        <p style="font-size:13px;color:#64748b;">rafif@mhs.unj.ac.id</p>
+      </div>
+    </div>
+    <div class="modal-box__warn">⚠️ Kamu masih punya 1 tugas berjalan. Notifikasi dan chat tetap dikirim ke emailmu.</div>
+    <label class="modal-box__checkbox">
+      <input type="checkbox" />
+      Keluar dari semua perangkat
+    </label>
+    <div class="modal-box__actions">
+      <button class="btn btn-neutral" id="logoutCancel" type="button">Batal</button>
+      <a href="login.html" class="btn btn-danger">Ya, Keluar</a>
+    </div>
+  </div>
+</div>
+
+<!-- CHAT SIDEBAR (dipakai di beberapa halaman lewat tombol "Chat") -->
+<div class="chat-backdrop" id="chatBackdrop"></div>
+<div class="chat-sidebar" id="chatSidebar">
+  <div class="chat-sidebar__header">
+    <div class="chat-sidebar__user">
+      <span class="avatar-circle" style="width:40px;height:40px;font-size:13px;">AF</span>
+      <div>
+        <div class="chat-sidebar__name-row">
+          <span class="chat-sidebar__name">Ahmad Fadhlan</span>
+          <span class="chat-sidebar__verified">✓ @unj.ac.id</span>
+        </div>
+        <p class="chat-sidebar__status">Online</p>
+      </div>
+    </div>
+    <button class="chat-sidebar__close" id="chatClose" type="button">✕</button>
+  </div>
+  <div class="chat-sidebar__summary">
+    <div class="chat-sidebar__summary-icon">💼</div>
+    <div>
+      <p class="chat-sidebar__summary-title">Print &amp; Antar Dokumen ke Gedung L</p>
+      <p class="chat-sidebar__summary-price">Rp 25.000</p>
+    </div>
+  </div>
+  <div class="chat-sidebar__body">
+    <div class="chat-bubble chat-bubble--them">Halo, ini diprint warna atau hitam putih ya?<time>10:14 AM</time></div>
+    <div class="chat-bubble chat-bubble--me">Hitam putih aja mas, file pdf-nya udah ada di lampiran.<time>10:15 AM</time></div>
+    <div class="chat-bubble chat-bubble--them">Oke, siap. Nanti saya antar jam 12 ke Gedung L ya.<time>10:16 AM</time></div>
+  </div>
+  <div class="chat-sidebar__footer">
+    <button class="chat-sidebar__attach" type="button">📎</button>
+    <input class="chat-sidebar__input" type="text" placeholder="Tulis pesan..." />
+    <button class="chat-sidebar__send" type="button">➤</button>
+  </div>
+</div>
+
+<!-- LOADING OVERLAY (dipicu lewat JS saat proses tertentu) -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-overlay__spinner"></div>
+  <p class="loading-overlay__title" id="loadingTitle">Memproses...</p>
+  <p class="loading-overlay__desc" id="loadingDesc">Mohon tunggu sebentar.</p>
+</div>

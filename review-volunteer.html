@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beri Rating Volunteer — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div style="padding:20px 30px 0;">
+      <p class="breadcrumb">Tugas Saya / Print &amp; Antar / Beri Rating</p>
+      <p class="page-title" style="margin-bottom:0;">Beri Rating</p>
+    </div>
+
+    <div class="review-layout">
+      <div class="review-main">
+        <div class="success-banner">
+          <div class="success-banner__icon">✅</div>
+          <div>
+            <b style="font-size:16px;color:#0f172a;">Tugas selesai dikerjakan!</b>
+            <p style="color:#475569;font-size:13px;margin-top:2px;">Dana Rp 25.000 sudah dicairkan ke volunteer. Yuk, nilai pengalamanmu.</p>
+          </div>
+        </div>
+
+        <div class="rating-card">
+          <div class="rating-person">
+            <span class="avatar-circle" style="width:60px;height:60px;font-size:20px;background:var(--color-primary);color:#fff;">RA</span>
+            <div>
+              <b style="font-size:16px;color:#1f2937;">Rafif Wiryawan</b>
+              <p style="font-size:13px;color:#6b7280;">FT · Pend. Teknik Informatika · 42 tugas selesai</p>
+            </div>
+            <span class="badge-amber" style="margin-left:auto;">⭐ 4.9</span>
+          </div>
+
+          <div style="text-align:center;">
+            <p style="font-weight:800;font-size:18px;color:#1f2937;">Bagaimana pengalamanmu dengan Rafif?</p>
+            <p style="color:#6b7280;font-size:13px;margin-top:4px;">Rating kamu membantu volunteer lain naik di leaderboard.</p>
+            <div class="star-row filled" style="justify-content:center;margin-top:14px;" id="mainStars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="badge-amber" style="margin-top:8px;">Luar biasa!</span>
+          </div>
+
+          <div class="rating-dims" style="flex-direction:row;gap:14px;">
+            <div style="flex:1;background:#f1fbf8;border-radius:12px;padding:14px;text-align:center;">
+              <p style="font-weight:700;font-size:12px;color:#1f2937;margin-bottom:8px;">Ketepatan waktu</p>
+              <div class="star-row filled" style="font-size:16px;justify-content:center;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            </div>
+            <div style="flex:1;background:#f1fbf8;border-radius:12px;padding:14px;text-align:center;">
+              <p style="font-weight:700;font-size:12px;color:#1f2937;margin-bottom:8px;">Komunikasi</p>
+              <div class="star-row filled" style="font-size:16px;justify-content:center;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            </div>
+            <div style="flex:1;background:#f1fbf8;border-radius:12px;padding:14px;text-align:center;">
+              <p style="font-weight:700;font-size:12px;color:#1f2937;margin-bottom:8px;">Kualitas hasil</p>
+              <div class="star-row" style="font-size:16px;justify-content:center;"><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span style="color:#f59e0b;">★</span><span>★</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <b style="font-size:13px;color:#1f2937;">Apa yang bikin kamu puas?</b>
+              <span style="font-size:11px;color:#6b7280;">Pilih lebih dari satu</span>
+            </div>
+            <div class="chip-select">
+              <span class="active">✓ Cepat &amp; tepat waktu</span>
+              <span class="active">✓ Sopan &amp; ramah</span>
+              <span class="active">✓ Hasil rapi</span>
+              <span>Komunikatif</span>
+              <span>Sesuai instruksi</span>
+              <span>Terpercaya</span>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <b style="font-size:13px;color:#1f2937;">Tulis ulasan</b>
+              <span style="font-size:11px;color:#6b7280;">Opsional</span>
+            </div>
+            <textarea class="form-input" rows="3" style="resize:vertical;width:100%;" placeholder="Ceritakan pengalamanmu...">Cepet banget, dokumen sampai sebelum kelas mulai. Rapi dan sopan, pasti pakai lagi!</textarea>
+          </div>
+
+          <label class="checkbox-row">
+            <input type="checkbox" checked />
+            <span>Tampilkan nama saya di ulasan (bukan anonim)</span>
+          </label>
+
+          <div class="review-actions">
+            <a href="progress-client.html" class="btn btn-outline">Lewati</a>
+            <a href="profil.html" class="btn btn-primary">Kirim Rating</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-sidebar">
+        <div class="card" style="padding:24px;">
+          <p style="font-weight:800;color:var(--color-primary);font-size:15px;">Ringkasan Tugas</p>
+          <span class="tag-teal" style="margin-top:8px;display:inline-block;">Print &amp; Antar</span>
+          <p style="font-weight:700;font-size:15px;color:#1f2937;margin-top:8px;">Print &amp; Antar Dokumen ke Gedung M</p>
+          <p style="font-size:13px;color:#6b7280;margin-top:6px;">📍 Kampus A Rawamangun</p>
+          <p style="font-size:13px;color:#6b7280;">🕒 Selesai hari ini, 12.18</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e5e7eb;margin-top:14px;padding-top:14px;">
+            <span style="font-size:13px;color:#6b7280;">Imbalan dibayar</span>
+            <b style="font-size:18px;color:var(--color-primary);">Rp 25.000</b>
+          </div>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <p style="font-weight:800;color:var(--color-primary);font-size:15px;margin-bottom:12px;">Status Pembayaran</p>
+          <div class="checklist-item" style="padding:0 0 10px;border:none;">
+            <div class="checklist-item__check done">✓</div>
+            <div style="flex:1;display:flex;justify-content:space-between;"><span style="font-size:13px;">Volunteer ditemukan</span><small style="color:#6b7280;">11.02</small></div>
+          </div>
+          <div class="checklist-item" style="padding:0 0 10px;border:none;">
+            <div class="checklist-item__check done">✓</div>
+            <div style="flex:1;display:flex;justify-content:space-between;"><span style="font-size:13px;">DP 50% ditahan</span><small style="color:#6b7280;">11.05</small></div>
+          </div>
+          <div class="checklist-item" style="padding:0 0 10px;border:none;">
+            <div class="checklist-item__check done">✓</div>
+            <div style="flex:1;display:flex;justify-content:space-between;"><span style="font-size:13px;">Dikerjakan</span><small style="color:#6b7280;">12.10</small></div>
+          </div>
+          <div class="checklist-item" style="padding:0;border:none;">
+            <div class="checklist-item__check done">✓</div>
+            <div style="flex:1;display:flex;justify-content:space-between;"><b style="font-size:13px;">Dana cair</b><small style="color:#6b7280;">12.18</small></div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:24px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <p style="font-weight:800;color:var(--color-primary);font-size:15px;">Rating Rafif</p>
+            <span style="font-size:12px;font-weight:600;color:var(--color-primary);">38 ulasan</span>
+          </div>
+          <div style="display:flex;gap:18px;align-items:center;margin-top:12px;">
+            <div>
+              <p style="font-size:44px;font-weight:800;color:#2a7b73;line-height:1;">4.9</p>
+              <small style="color:#6b7280;">dari 5.0</small>
+            </div>
+            <div class="rating-breakdown" style="flex:1;">
+              <div class="rating-breakdown-row"><span>5</span><div class="bar"><i style="width:85%;"></i></div><span>34</span></div>
+              <div class="rating-breakdown-row"><span>4</span><div class="bar"><i style="width:9%;"></i></div><span>3</span></div>
+              <div class="rating-breakdown-row"><span>3</span><div class="bar"><i style="width:3%;"></i></div><span>1</span></div>
+              <div class="rating-breakdown-row"><span>2</span><div class="bar"><i style="width:0%;"></i></div><span>0</span></div>
+              <div class="rating-breakdown-row"><span>1</span><div class="bar"><i style="width:0%;"></i></div><span>0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip-card">
+          <b>💡 Kenapa rating penting?</b>
+          <p style="margin-top:6px;">Ulasan jujur menjaga kepercayaan di UNJ Suruh dan bantu client lain memilih volunteer.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

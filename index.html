@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNJ Suruh — Beranda</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="navbar-placeholder" data-navbar="guest"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Solusi Tugas &amp; Urusan Kampus Cepat!</h1>
+        <p class="hero__subtitle">Saling bantu antar mahasiswa UNJ.<br />Dari Mahasiswa Untuk Mahasiswa.</p>
+        <span class="hero__badge">Beresin Aja di #UNJSuruh</span>
+      </div>
+      <div class="hero__cards">
+        <div class="hero-card hero-card--teal">
+          <div class="hero-card__icon">📝</div>
+          <div>
+            <p class="hero-card__title">Post Tugas / Minta Bantuan</p>
+            <p class="hero-card__desc">Punya tugas menumpuk? Posting di sini dan temukan teman yang siap bantu.</p>
+          </div>
+          <a href="post-tugas.html" class="btn btn-primary" style="width:100%;">Buat Postingan</a>
+        </div>
+        <div class="hero-card hero-card--white">
+          <div class="hero-card__icon">🔍</div>
+          <div>
+            <p class="hero-card__title">Cari Tugas / Ambil Pekerjaan</p>
+            <p class="hero-card__desc">Punya waktu luang? Bantu sesama mahasiswa dan dapatkan tambahan uang saku.</p>
+          </div>
+          <a href="cari-tugas.html" class="btn btn-outline" style="width:100%;">Jelajahi Tugas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK FEED -->
+    <section class="task-feed">
+      <div class="task-feed__header">
+        <h2 class="task-feed__title">Tugas &amp; Bantuan Terbaru</h2>
+        <p class="task-feed__desc">Pilih tugas yang sesuai dengan keahlian dan lokasimu.</p>
+        <div class="task-feed__filters">
+          <span class="pill active">Semua</span>
+          <span class="pill">Errand &amp; Jastip</span>
+          <span class="pill">Akademik</span>
+          <span class="pill">Desain &amp; Media</span>
+          <span class="pill">Acara Kampus</span>
+        </div>
+      </div>
+      <div class="task-grid">
+        <article class="task-card">
+          <div class="task-card__tags">
+            <span class="tag tag--category">Errand</span>
+            <span class="tag tag--location">📍 Kampus A</span>
+          </div>
+          <p class="task-card__title">Bantu Print &amp; Antar Dokumen ke Gedung M</p>
+          <p class="task-card__desc">Butuh bantuan print 20 lembar dan diantar sebelum jam 1 siang.</p>
+          <div class="task-card__meta">
+            <span class="task-card__price">Rp 25.000</span>
+            <span class="task-card__deadline">⏰ Sisa 2 Jam</span>
+          </div>
+          <div class="task-card__footer">
+            <div class="task-card__user">
+              <span class="avatar-circle">AF</span>
+              <span class="task-card__user-name">Ahmad F. ✅</span>
+            </div>
+            <a href="detail-tugas.html" class="btn-small">Ambil Tugas</a>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <div class="task-card__tags">
+            <span class="tag tag--category">Akademik</span>
+            <span class="tag tag--location">💻 Online</span>
+          </div>
+          <p class="task-card__title">Bantu Mengerjakan Tugas Statistik SPSS</p>
+          <p class="task-card__desc">Butuh bantuan menganalisis data dan membuat laporan akhir.</p>
+          <div class="task-card__meta">
+            <span class="task-card__price">Rp 50.000</span>
+            <span class="task-card__deadline">⏰ Sisa 1 Hari</span>
+          </div>
+          <div class="task-card__footer">
+            <div class="task-card__user">
+              <span class="avatar-circle">SR</span>
+              <span class="task-card__user-name">Siti R. ✅</span>
+            </div>
+            <a href="detail-tugas.html" class="btn-small">Ambil Tugas</a>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <div class="task-card__tags">
+            <span class="tag tag--category">Desain</span>
+            <span class="tag tag--location">📍 Kampus B</span>
+          </div>
+          <p class="task-card__title">Desain Poster untuk Event Kampus</p>
+          <p class="task-card__desc">Butuh desain poster yang menarik untuk acara seminar nasional.</p>
+          <div class="task-card__meta">
+            <span class="task-card__price">Rp 75.000</span>
+            <span class="task-card__deadline">⏰ Sisa 3 Hari</span>
+          </div>
+          <div class="task-card__footer">
+            <div class="task-card__user">
+              <span class="avatar-circle">DK</span>
+              <span class="task-card__user-name">Dina K. ✅</span>
+            </div>
+            <a href="detail-tugas.html" class="btn-small">Ambil Tugas</a>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <div class="task-card__tags">
+            <span class="tag tag--category">Acara</span>
+            <span class="tag tag--location">📍 Auditorium</span>
+          </div>
+          <p class="task-card__title">Bantu Jadi Crew Event Pemilihan Raja Kampus</p>
+          <p class="task-card__desc">Butuh bantuan untuk mengatur panggung dan dokumentasi acara.</p>
+          <div class="task-card__meta">
+            <span class="task-card__price">Rp 40.000</span>
+            <span class="task-card__deadline">⏰ Sisa 5 Jam</span>
+          </div>
+          <div class="task-card__footer">
+            <div class="task-card__user">
+              <span class="avatar-circle">RK</span>
+              <span class="task-card__user-name">Revani K. ✅</span>
+            </div>
+            <a href="detail-tugas.html" class="btn-small">Ambil Tugas</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Mengapa Menggunakan UNJ Suruh?</h2>
+        <p class="section__subtitle">Platform transaksi aman dan efisien khusus civitas akademika UNJ.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">🛡️</div>
+          <div>
+            <p class="feature-card__title">Sistem Rekber Aman</p>
+            <p class="feature-card__desc">Pembayaran ditampung aman oleh sistem dan baru dicairkan setelah tugas selesai diverifikasi.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">✅</div>
+          <div>
+            <p class="feature-card__title">Khusus Mahasiswa UNJ</p>
+            <p class="feature-card__desc">Keamanan terjamin dengan verifikasi akun menggunakan email resmi kampus @unj.ac.id.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚡</div>
+          <div>
+            <p class="feature-card__title">Proses Cepat &amp; Tepat</p>
+            <p class="feature-card__desc">Temukan bantuan tugas atau pekerjaan tambahan hanya dalam hitungan menit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--soft">
+      <div class="section__header">
+        <h2 class="section__title">3 Cara Sederhana Menggunakan UNJ Suruh</h2>
+        <p class="section__subtitle">Alur mudah bagi pemberi tugas maupun pencari pekerjaan.</p>
+      </div>
+      <div class="step-grid">
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div>
+            <p class="step-card__title">Posting atau Cari Tugas</p>
+            <p class="step-card__desc">Buat rincian kebutuhan dan tentukan fee, atau jelajahi daftar tugas yang tersedia.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div>
+            <p class="step-card__title">Kesepakatan &amp; Pengerjaan</p>
+            <p class="step-card__desc">Kerjakan tugas sesuai instruksi dan deadline yang telah disepakati bersama.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">3</div>
+          <div>
+            <p class="step-card__title">Konfirmasi &amp; Pencairan Dana</p>
+            <p class="step-card__desc">Kirim hasil pekerjaan, konfirmasi penyelesaian, dan terima fee secara langsung.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERBOARD PREVIEW -->
+    <section class="leaderboard-preview">
+      <div class="leaderboard-preview__header">
+        <h2 class="leaderboard-preview__title">Mahasiswa Teraktif Minggu Ini</h2>
+        <p class="leaderboard-preview__subtitle">Apresiasi untuk mahasiswa dengan penyelesaian tugas terbanyak dan rating tertinggi.</p>
+      </div>
+      <div class="rank-grid">
+        <div class="rank-card rank-card--gold">
+          <span class="rank-badge rank-badge--gold">🏆 Rank #1</span>
+          <div class="rank-user">
+            <span class="avatar-circle">RS</span>
+            <div>
+              <p class="rank-user__name">Rian S. - FT</p>
+              <p class="rank-user__rating">⭐ 4.9/5.0</p>
+            </div>
+          </div>
+          <p class="rank-stats">🛡️ 48 Tugas Selesai</p>
+        </div>
+        <div class="rank-card rank-card--silver">
+          <span class="rank-badge rank-badge--other">🏆 Rank #2</span>
+          <div class="rank-user">
+            <span class="avatar-circle">DA</span>
+            <div>
+              <p class="rank-user__name">Dinda A. - FIP</p>
+              <p class="rank-user__rating">⭐ 4.8/5.0</p>
+            </div>
+          </div>
+          <p class="rank-stats">🛡️ 42 Tugas Selesai</p>
+        </div>
+        <div class="rank-card rank-card--silver">
+          <span class="rank-badge rank-badge--other">🏆 Rank #3</span>
+          <div class="rank-user">
+            <span class="avatar-circle">BK</span>
+            <div>
+              <p class="rank-user__name">Bagas K. - FMIPA</p>
+              <p class="rank-user__rating">⭐ 4.7/5.0</p>
+            </div>
+          </div>
+          <p class="rank-stats">🛡️ 38 Tugas Selesai</p>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <a href="leaderboard.html" class="btn" style="border:1.5px solid #f59e0b; color:#92400e; background:transparent;">Lihat Seluruh Leaderboard</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+      <div style="text-align:left; margin-bottom:48px;">
+        <h2 class="section__title">Apa Kata Mahasiswa UNJ?</h2>
+        <p class="section__subtitle" style="margin:0;">Pengalaman nyata dari mereka yang telah terbantu dan mendapatkan penghasilan.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">&ldquo;</p>
+          <p class="testimonial-card__text">Sangat membantu pas kepepet butuh print &amp; antar dokumen ke Kampus A saat jadwal kuliah padat!</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-circle">DA</span>
+            <span class="testimonial-card__name">Dinda A. - FIP</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">&ldquo;</p>
+          <p class="testimonial-card__text">Lumayan banget bisa dapat uang saku tambahan dari pengerjaan tugas desain di waktu luang.</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-circle">BK</span>
+            <span class="testimonial-card__name">Bagas K. - FMIPA</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">&ldquo;</p>
+          <p class="testimonial-card__text">Sistem rekbernya bikin tenang, dana cair tepat waktu setelah pekerjaan diverifikasi. Mantap pokoknya.</p>
+          <div class="testimonial-card__author">
+            <span class="avatar-circle">FM</span>
+            <span class="testimonial-card__name">Fikri M. - FEB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Akun — UNJ Suruh</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="auth-split">
+    <div class="auth-split__panel auth-split__panel--brand">
+      <svg class="auth-logo" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="10" width="120" height="60" rx="14" fill="#0d9488"/>
+        <text x="60" y="48" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="700" fill="#ffffff">UNJ Suruh</text>
+      </svg>
+      <div>
+        <p class="auth-split__title">Bergabung dengan Ekosistem Mahasiswa UNJ</p>
+        <p class="auth-split__subtitle">Satu akun untuk meminta bantuan tugas atau mencari penghasilan tambahan.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:16px; width:100%;">
+        <div class="feature-row">
+          <div class="feature-row__icon">🛡️</div>
+          <div>
+            <p class="feature-row__title">Eksklusif Civitas UNJ</p>
+            <p class="feature-row__desc">Verifikasi akun menggunakan KTM dan email resmi kampus.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__icon">🔒</div>
+          <div>
+            <p class="feature-row__title">Pembayaran Escrow Aman</p>
+            <p class="feature-row__desc">Dana ditampung sistem sampai pengerjaan diverifikasi.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__icon">💬</div>
+          <div>
+            <p class="feature-row__title">Privasi Terjaga</p>
+            <p class="feature-row__desc">Fitur chat internal tanpa perlu tukar nomor pribadi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-split__panel" style="justify-content:center;">
+      <form class="auth-form-card" style="box-shadow:none; max-width:420px;" onsubmit="return false;">
+        <div>
+          <p class="auth-split__title" style="font-size:24px;">Buat Akun Baru</p>
+          <p style="font-size:14px; color:#6b7280;">Sudah punya akun? <a href="login.html" style="color:#0d9488; font-weight:600;">Masuk</a></p>
+        </div>
+
+        <div class="form-field">
+          <label for="fullname">Nama Lengkap</label>
+          <input id="fullname" type="text" placeholder="Sesuai KTM" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="nim">NIM</label>
+            <input id="nim" type="text" placeholder="1512XXXXXX" required />
+          </div>
+          <div class="form-field">
+            <label for="fakultas">Fakultas</label>
+            <select id="fakultas" required>
+              <option value="" disabled selected>Pilih Fakultas</option>
+              <option>Fakultas Teknik</option>
+              <option>Fakultas Ilmu Pendidikan</option>
+              <option>Fakultas Ekonomi</option>
+              <option>Fakultas MIPA</option>
+              <option>Fakultas Ilmu Sosial</option>
+              <option>Fakultas Bahasa dan Seni</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email UNJ</label>
+          <input id="email" type="email" placeholder="nama@mhs.unj.ac.id" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="password">Kata Sandi</label>
+            <input id="password" type="password" placeholder="••••••••" required />
+          </div>
+          <div class="form-field">
+            <label for="password2">Ulangi Kata Sandi</label>
+            <input id="password2" type="password" placeholder="••••••••" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="ktm">Foto KTM UNJ</label>
+          <label class="dropzone" for="ktm">
+            <span style="font-size:22px;">⬆️</span>
+            <span class="dropzone__title">Unggah Foto KTM UNJ</span>
+            <span class="dropzone__hint">Drag &amp; drop file di sini atau klik untuk unggah (Max 2MB)</span>
+          </label>
+          <input id="ktm" type="file" accept="image/*" style="display:none;" />
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" checked />
+          <span>Saya setuju dengan Syarat &amp; Ketentuan serta Kebijakan Privasi UNJ Suruh.</span>
+        </label>
+
+        <button type="submit" class="btn-block">Daftar Akun</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
